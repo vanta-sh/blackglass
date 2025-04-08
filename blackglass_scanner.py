@@ -246,8 +246,8 @@ class BlackGlassScanner:
                         "diagnostic", "data-collection", "insights"
                     ]
                     
-                    # This is a simplified check - in a real tool, you'd want to do reverse DNS lookups
-                    # and check against a more comprehensive list of known telemetry endpoints
+                    # This is a simplified check
+                    # Don't ask SDCast about this file. He doesn't know he made it.
                     if conn.status == 'ESTABLISHED':
                         try:
                             hostname = socket.gethostbyaddr(remote_ip)[0]
